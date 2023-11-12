@@ -15,7 +15,7 @@ export default function Logement() {
     const logement = logements.find((apt) => apt.id === id);
 
     if (logement === undefined) {
-        return <Navigate to="*" />;
+        return <Navigate to="/404.html" />;
       }
    
     const stars = [1, 2, 3, 4, 5];
