@@ -1,0 +1,127 @@
+.logement__description {
+    display: flex;
+}
+
+.logement__details {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    color: #FF6060;
+}
+
+.logement__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.location {
+
+    font-size: 18px;
+}
+
+.logement__owner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.owner__details {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    gap: 16px;
+}
+
+.picture {
+    border-radius: 64px;
+    width: 64px;
+    height: 64px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.logement__collapse{
+    margin-top: 24px;
+    display: flex;
+    gap: 78px;
+}
+
+.logement__collapse_item    {
+    width: 50%;
+}
+
+.logement__collapse_item .collapse__content, .logement__collapse_item .collapse__title{
+    font-size: 18px;
+}
+
+.logement__collapse_item .collapse__content p{
+    margin: 0;
+}
+
+.rating{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.star{
+    width: 32px;
+    height: 32px;
+}
+.star--full {
+    filter: invert(52%) sepia(18%) saturate(6587%) hue-rotate(328deg) brightness(120%) contrast(101%); /*remplir l'étoile svg avec la bonne couleur*/
+}
+
+@media screen and (max-width: 630px) {
+    .logement__details{
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .location{
+        font-size: 14px;
+    }
+
+    .logement__owner{
+        flex-direction: row-reverse;
+        gap: 32px;
+    }
+
+    .owner__details{
+        gap: 4px;
+        justify-content: flex-end;
+    }
+
+    .logement__collapse{
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .logement__collapse_item{
+        width: 100%;
+    }
+
+    .star{
+        width: 24px;
+        height: 24px;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    .picture {
+        border-radius: 32px;
+        width: 32px;
+        height: 32px;
+    }
+}
