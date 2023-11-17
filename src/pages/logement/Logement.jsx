@@ -13,7 +13,7 @@ import Footer from '../../components/footer/Footer'
 export default function Logement() {
     const { id } = useParams();
     const logement = logements.find((apt) => apt.id === id);
-
+    
     if (logement === undefined) {
         return <Navigate to="/404.html" />;
       }
@@ -67,7 +67,7 @@ export default function Logement() {
                     <Collapse title={'Description'} content={logement.description} />
                 </div>
                 <div className="logement__collapse_item">
-                    <Collapse title={'Equipements'} content={logement.equipments} />
+                    <Collapse title={'Equipements'} content={logement.equipments.join('\n')} />
                 </div>
             </div>
             <Footer />

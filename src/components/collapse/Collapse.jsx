@@ -17,12 +17,7 @@ export default function Collapse({ title, content }) {
                 />
             </div>
             <div className={collapsed ? 'collapse__content' : 'collapse__content hide'}>
-                {
-                    Array.isArray(content) ? content.map((item, index) => {
-                        return (
-                            <p key={index}>{item}</p>
-                        )
-                    }) : content}
+                {content}
             </div>
         </div>
     )
